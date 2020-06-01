@@ -1,0 +1,262 @@
+\documentclass[]{article}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+%opening
+\title{Idea Marketplace | Seviss | Terence Brewer, Olivia Brewer, Steven Aque}
+\author{Project 5: ER Diagram}
+
+\begin{document}
+
+\maketitle
+
+\section{Background}
+	Currently, there is nowhere on the Internet, at least indexed well, where someone can easily sell their personal intellectual property, including, but not limited to, ideas, consulting, fictional characters and premises, etc. so the desire for one to exist is what led to this project idea.
+\section{Web Analysis}
+	\begin{enumerate}
+		\item Existing Sites That Are Relevant
+		\begin{enumerate}
+			\item Fiverr
+			\begin{itemize}
+				\item Posts organized in categories
+				\item Reviews for posts
+				\item Reviews as seller
+				\item Direct communication with seller
+				\item Website collects a portion of profits from seller
+				\item Anyone can make an account and sell their service
+				\item Customer is not producted from seller malicious practices
+			\end{itemize}
+			\item DeviantArt
+			\begin{itemize}
+				\item Search by popularity, new, and other filters
+				\item Customizable user profiles
+				\item Ability to follow users; display number of followers
+				\item Promote postings through a group system
+				\item Private and public messaging
+				\item Comments on user profiles
+				\item Pay for goods independently to seller
+				\item Show related posts on listing
+				\item Default dark theme
+				\item Homepage features a gallery of images
+				\item Images displayed in a grid-like fashion
+				\item \(Shop\) user IP protected by copyrighted.com
+				\item \(Shop\) premium currency can be used to make purchases
+				\item \(Shop\) forced sign-in purchases
+			\end{itemize}
+			\item Amazon
+			\begin{itemize}
+				\item Pay to promote listings
+				\item Recommendations for listings
+				\item Save previous purchases
+				\item Indirect communication with seller
+				\item Protected purchase information
+				\item left navbar contains a variety of search filters
+				\item Product categorization through "departments"
+				\item "Best sellers" list for product types
+			\end{itemize}
+			\item Ebay
+			\begin{itemize}
+				\item Option to auction goods
+				\item Product categorization
+				\item "Make an offer" option
+				\item Any user can list products
+			\end{itemize}
+			\item AminoApps
+			\begin{itemize}
+				\item Store to purchase cosmetics such as stickers
+				\item Recommendations on intial page
+				\item Required login to post
+				\item Divided into hundreds of communities
+				\item Chatrooms
+			\end{itemize}
+			\item Craigslist
+			\begin{itemize}
+				\item Customer initiates sale through contact rather than "shopping cart" system
+				\item Negotiable pricing
+				\item Designed for users in close proximity
+				\item Any user can list products
+			\end{itemize}
+		\end{enumerate}
+		\item Functions We Want To Implement
+		\begin{enumerate}
+			\item Search products by name
+			\item Filter search results
+			\item Recommend products on login
+			\item Pagination
+			\item Copright-protect products
+			\item Premium currency with ability to earn
+			\item Ability to auction
+			\item Security of user data
+			\item Have an economy
+			\item Create and customize a profile, including profile picture
+			\item Private messaging with sellers and other users
+			\item Forced login to post or purchase
+			\item Products are reviewed before they are made public
+			\item Chatrooms / public discussion
+			\item Product categorization
+			\item Seller Rating
+		\end{enumerate}
+		\item Table
+		\begin{table}[!h]
+			\begin{tabular}{|c|c|c|c|c|c|c|c|}
+				\hline  & Our System & Fiverr & DeviantArt & Amazon & Ebay & AminoApps & Craigslist \\
+				\hline Search & V & V & V & V & V & V & V\\
+				\hline Filter & V & V & V & V & V & V & V\\
+				\hline Recommend & V & V & V & V & V & V & X\\
+				\hline Pagination & V & V & X & V & V & X & V\\
+				\hline Copyright & V & X & O & X & X & X & X\\
+				\hline Premium currency & V & X & V & O & O & V & X\\
+				\hline Auction & V & X & X & X & V & X & O\\
+				\hline Security & V & V & V & V & V & V & X\\
+				\hline Economy & V & X & X & X & X & X & X\\
+				\hline User Profile & V & X & V & X & X & V & O\\
+				\hline Private message & V & V & V & O & O & V & X\\
+				\hline Forced login & V & X & V & X & O & V & X\\
+				\hline Reviewed by Site & V & X & X & V & V & O & X\\
+				\hline Chatrooms & V & X & V & X & X & V & O\\
+				\hline Categorization & V & V & V & V & V & V & V\\
+				\hline Seller Rating & V & V & X & V & V & X & X\\ 
+				\hline
+			\end{tabular}
+			\caption{V: Able to perform the task; X: Unable to perform the task; O: Able to perform the task with poor interactive design}
+		\end{table}
+	\end{enumerate}
+\section{Storyboard}
+	\begin{enumerate}
+		\item Who is this site for? 
+		Buyers and Sellers of Intellectual Property
+		\item Storyboard Sketchup:
+		\begin{itemize}
+			\item Pictures in previous assignment
+		\end{itemize}
+
+	\section{ERDiagram}
+	Section 4: ER Diagram
+
+	The purpose of this section is to demonstrate how our database will be designed. Our database will store
+	important information for making our website dynamic, so making sure the database design is good will
+	make the dynamic portion of the website easier.
+
+	\begin{figure}
+		\includegraphics[width=\linewidth]{./pictures/erdiagram.png}
+		\caption{ER diagram.}
+		\label{fig:ERDiagram}
+	\end{figure}	
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline  Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & uid & varchar(16) & V & V & X & X & Username\\
+		\hline X & pwd & varchar(64) & V & X & V & X & Stored hash of Password\\
+		\hline X & name & varchar(64) & X & X & X & X & Name of user that displays on their profile\\
+		\hline X & interests & varchar(128) & X & X & X & X & Text field of interests on user profile\\
+		\hline X & about & varchar(128) & X & X & X & X & Text field of about the user on user profile\\
+		\hline X & currency & int & V & X & X & X & The amount of virtual currency the user has\\
+		\hline X & regdate & datetime & V & X & X & X & The date user registered\\
+		\hline X & picid & int & X & X & X & V & Profile picture of the user\\
+	\end{tabular}
+	\caption{User Table}
+	\end{table}
+
+	This table stores all information related to the User.
+	The User table has a connection to the picture table as it only has one profile picture.
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline  Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & pid & int & V & V & X & X & ID of the product\\
+		\hline X & uid & varchar(16) & V & X & V & V & Username of the seller\\
+		\hline X & price & float & V & X & X & X & Price of the product\\
+		\hline X & title & varchar(64) & V & V & X & X & The name of the Product\\
+		\hline X & negotiable & boolean & V & X & X & X & Whether the product displays as negotiable or not\\
+		\hline X & cid & int & V & X & X & V & ID of category in which this product belongs\\		
+	\end{tabular}
+	\caption{Product Table}	
+	\end{table}	
+
+	This table stores all information for each product, such as price and creator.
+	The Product table has a connection to the Category table due to each product having a category. It is connected
+	to the User table because a product can only be sold by a single User.
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline  Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & oid & int & V & V & X & X & ID of the order\\
+		\hline X & uid & varchar(16) & V & X & V & V & Username of the buyer\\
+		\hline X & pid & int & V & X & V & V & Product of the order. Each order only has 1 product.\\
+		\hline X & creationdate & datetime & V & X & X & X & When the order was created.\\
+		\hline X & statusid & int & V & X & X & V & ID of status. Status is used for storing metadata on orders.\\
+	\end{tabular}
+	\caption{Order Table}	
+	\end{table}	
+
+	This table stores all orders, both old and new. 
+	Each order only has one product, which is why there's a connection to the product table. They are also connected to
+	the User table as the user is the buyer of this product. There is only a set number of statuses, so there is a 
+	connection to the status table to determine visually which status this order is in. 	
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline   Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & statusid & int & V & V & X & X & ID of the status\\
+		\hline X & name & varchar(16) & V & V & X & X & Name of the status, i.e. Fulfilled, Cancelled, Ongoing, etc.\\
+	\end{tabular}
+	\caption{Status Table}	
+	\end{table}		
+
+	The Status table contains string values for all possible statuses an order can be in.
+	It has no foreign keys as it is essentially a static table to be referenced by others.
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline   Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & cid & int & V & V & X & X & ID of the Category\\
+		\hline X & name & varchar(32) & V & V & X & X & Name of the category, i.e. Music, Original Characters, etc.\\
+	\end{tabular}
+	\caption{Category Table}	
+	\end{table}		
+
+	The Category table contains string values for all possible categories a product can be.
+	It has no foreign keys as it is essentially a static table to be referenced by others.	
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline   Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & picid & int & V & V & X & X & ID of the Picture\\
+		\hline V & uid & varchar(16) & V & X & X & V & The user who uploaded the picture. Both act as the primary key.\\
+		\hline X & path & varchar(128) & V & V & X & X & The path to the picture on the server\\		
+	\end{tabular}
+	\caption{Image Table}	
+	\end{table}	
+
+	The Image table stores the paths of all uploaded images. It is connected to a User as only the uploader can use this
+	image.			
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline   Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & tagid & int & V & V & X & X & ID of the Tag\\
+		\hline V & pid & int & V & X & X & V & The product this tag has been assigned to. Doubles as primary key.\\
+		\hline X & name & varchar(32) & V & X & X & X & The path to the picture on the server\\		
+	\end{tabular}
+	\caption{Tag Table}		
+	\end{table}	
+
+	The Tag table stores all tags the user can allocate to a product. This table is connected to the product table because
+	the same product can have multiple tags and the tags are not pre-defined.
+
+	\begin{table}[!h]
+	\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{4cm}|}
+		\hline   Primary Key & Field Name & Data Type & Non-null & Unique & Binary & Foreign Key & Comments \\
+		\hline V & pid & int & V & X & X & X & ID of the Product to be saved\\
+		\hline V & uid & varchar(16) & V & X & X & V & The user who saved the product. Both act as the primary key.\\	
+	\end{tabular}
+	\caption{Save-For-Later Table}	
+	\end{table}	
+
+	The Save For Later table doubles as a watch list for the user. It is a list of products and uids, each stored on their
+	list.
+
+\end{table}
+
+\end{document}

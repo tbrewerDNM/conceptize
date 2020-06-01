@@ -1,0 +1,67 @@
+Functionality by page:
+
+all pages:
+WIP	coins do not update until after logout
+        -- sometimes works on certain pages
+        -- definitely NOT WORKING ON index.jsp, product.jsp, checkout.jsp
+DONE	height cap images on all pages
+DONE	increase coins on product sale
+DONE    users unable to buy own product
+WIP     (optional) improve UX on error from attempting to buy own product
+
+checkout.jsp:
+DONE	place order must place proper order and go to confirmation.jsp
+DONE	cancel should go back to either index.jsp or product page
+
+confirmation.jsp:
+DONE	must have link to home page
+
+create-product.jsp:
+DONE	must create product and add to appropriate user's product list, as well as overall product list
+DONE	all fields must update correctly
+DONE	"category" text not appearing on create-product page
+DONE	upon product creation, error occurs, but still uploads to DB
+DONE     two-word categories not being stored in database properly
+
+edit-product.jsp:
+DONE    same functionality as create-product.jsp, just for an existing item
+WIP     (optional) must be linked to from all pages where the product might appear
+
+edit-profile.jsp:
+DONE	on initial page load, must have all fields filled with what is currently on profile.jsp (i.e. must update as user profile page changes, not only on logout)
+DONE	must update all user fields
+DONE	must properly go back to profile.jsp upon submission
+
+error.jsp:
+DONE	must have link to home page
+
+index.jsp:
+DONE	must change header based on whether or not user is logged in
+DONE	all links must be functional (login,register,search,products,categories,user-dropdown : profile,edit-profile,upload-product,log out)
+
+login.jsp:
+DONE	must prevent user from inputting special characters
+DONE	login properly based on username + password
+DONE	must redirect to index.jsp upon submission
+
+orders.jsp:
+DONE     must be created dynamically
+
+product.jsp:
+DONE	must have checkout button link to checkout.jsp
+DONE	must display image, price, owner, title, and negotiability properly
+
+profile.jsp:
+DONE	must update username, register date, name, about, interests, and product list based on which user's profile is being observed
+DONE	products on products tab should link to the product page
+DONE	remove add new button on products tab
+
+register.jsp:
+DONE	must prevent user from inputting special characters
+DONE	must prevent user from registering if username already taken
+DONE	must redirect to login.jsp upon submission
+
+search.jsp:
+DONE	must link to page properly from all search bars on other pages
+WIP     (optional) center images with incorrect aspect ratio
+DONE	(optional) have the search bar submit on "enter" key press

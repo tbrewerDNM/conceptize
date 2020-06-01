@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/355024952d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" style="height:auto">
+            <div class="row" style="padding-bottom:5;">
+                <div class="container" id="home-header" style="width:100%">
+                    <nav class="navbar-header">
+                            <a class="navbar-brand" href="homepage.html"><img src="logo.svg"/><span id="brand">onceptize</span></a>
+                            <span><a href="login.html"><i class="fas fa-portrait"></i> Sign In</a> | <a href="signup.html"><strong>Join</strong></a></span>
+                    </nav>
+                        <div class="jumbotron">
+                            <div class="row">
+                                    <div class="col-xl-2 col-lg-2 col-md-2"></div>
+                                    <h1 style="font-weight:700" class="col-xl-6 col-lg-6 col-md-8">I N N O V A T I O N<br> <span style="font-weight:200">Just one click away</span></h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 col-md-2"></div>
+                                <div class="input-group col-xl-6 col-lg-6 col-md-8">
+                                    <div class="input-group-prepend">
+                                        <div class="dropdown">
+                                            <button id="home-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                All
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">All</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Design</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Digital Marketing</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Original Characters</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Writing</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Inventions</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Music</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search" name="search">
+                                    <div class="input-group-append">
+                                        <a href="search.html">
+                                            <button class="btn btn-info" type="button"><i class="fas fa-search"></i></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="container" id="home-content">
+                                <div style="position:relative;left:10px;padding-bottom:10px; font-weight:bold"><h3>Recommended</h3><h6 style="color:gray;padding-top:0px">Based on recent searches</h6></div>
+                                <div style="width:100%;height: 37vh;" id="demo" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ul class="carousel-indicators">
+                                            <li  data-target="#demo" data-slide-to="0" class="active"></li>
+                                            <li data-target="#demo" data-slide-to="1"></li>
+                                            <li data-target="#demo" data-slide-to="2"></li>
+                                        </ul>
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                    <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                            <a href="product.html"><img class="card-img-top carousel-img" src="Anime.png" alt="tmp"></a>
+                                                            <div class="card-body">
+                                                                    <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Anime Painting<hr></h5>
+                                                                    <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $70</span></p>
+                                                            </div>
+                                                    </div>
+                                                <span class="medium-only">
+                                                        <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                <a href="product.html"><img class="card-img-top carousel-img" src="God.png" alt="tmp"></a>
+                                                                <div class="card-body">
+                                                                        <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune God Painting<hr></h5>
+                                                                        <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $30</span></p>
+                                                                </div>
+                                                        </div>
+                                                </span>
+                                                <span class="large-only">
+                                                        <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                <a href="product.html"><img class="card-img-top carousel-img" src="Planet.png" alt="tmp"></a>
+                                                                <div class="card-body">
+                                                                        <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Planet Painting<hr></h5>
+                                                                        <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $100</span></p>
+                                                                </div>
+                                                        </div>
+                                                </span>
+                                            </div>
+                                            <div class="carousel-item">
+                                                            <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                    <a href="product.html"><img class="card-img-top carousel-img" src="Anime.png" alt="tmp"></a>
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Anime Painting<hr></h5>
+                                                                            <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $70</span></p>
+                                                                    </div>
+                                                            </div>
+                                                        <span class="medium-only">
+                                                                <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                        <a href="product.html"><img class="card-img-top carousel-img" src="God.png" alt="tmp"></a>
+                                                                        <div class="card-body">
+                                                                                <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune God Painting<hr></h5>
+                                                                                <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $30</span></p>
+                                                                        </div>
+                                                                </div>
+                                                        </span>
+                                                        <span class="large-only">
+                                                                <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                        <a href="product.html"><img class="card-img-top carousel-img" src="Planet.png" alt="tmp"></a>
+                                                                        <div class="card-body">
+                                                                                <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Planet Painting<hr></h5>
+                                                                                <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $100</span></p>
+                                                                        </div>
+                                                                </div>
+                                                        </span>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                                        <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                <a href="product.html"><img class="card-img-top carousel-img" src="Anime.png" alt="tmp"></a>
+                                                                <div class="card-body">
+                                                                        <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Anime Painting<hr></h5>
+                                                                        <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $70</span></p>
+                                                                </div>
+                                                        </div>
+                                                    <span class="medium-only">
+                                                            <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                    <a href="product.html"><img class="card-img-top carousel-img" src="God.png" alt="tmp"></a>
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune God Painting<hr></h5>
+                                                                            <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $30</span></p>
+                                                                    </div>
+                                                            </div>
+                                                    </span>
+                                                    <span class="large-only">
+                                                            <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                    <a href="product.html"><img class="card-img-top carousel-img" src="Planet.png" alt="tmp"></a>
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Planet Painting<hr></h5>
+                                                                            <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $100</span></p>
+                                                                    </div>
+                                                            </div>
+                                                    </span>
+                                    </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                            <span  class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </a>
+                                </div>
+                                </div>
+                                <div style="position:relative;left:10px;padding-top:20px;padding-bottom:10px; font-weight:bold"><h3>Hot <i class="fas fa-fire"></i></h3><h6 style="color:gray;padding-top:0px">Based on trending searches</h6></div>
+                                <div style="width:100%;height:37vh;" id="demo2" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ul class="carousel-indicators">
+                                            <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#demo2" data-slide-to="1"></li>
+                                            <li data-target="#demo2" data-slide-to="2"></li>
+                                        </ul>
+
+                                        <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                        <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                <a href="product.html"><img class="card-img-top carousel-img" src="Anime.png" alt="tmp"></a>
+                                                                <div class="card-body">
+                                                                        <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Anime Painting<hr></h5>
+                                                                        <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $70</span></p>
+                                                                </div>
+                                                        </div>
+                                                    <span class="medium-only">
+                                                            <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                    <a href="product.html"><img class="card-img-top carousel-img" src="God.png" alt="tmp"></a>
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune God Painting<hr></h5>
+                                                                            <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $30</span></p>
+                                                                    </div>
+                                                            </div>
+                                                    </span>
+                                                    <span class="large-only">
+                                                            <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                    <a href="product.html"><img class="card-img-top carousel-img" src="Planet.png" alt="tmp"></a>
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Planet Painting<hr></h5>
+                                                                            <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $100</span></p>
+                                                                    </div>
+                                                            </div>
+                                                    </span>
+                                                </div>
+                                                <div class="carousel-item">
+                                                                <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                        <a href="product.html"><img class="card-img-top carousel-img" src="Anime.png" alt="tmp"></a>
+                                                                        <div class="card-body">
+                                                                                <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Anime Painting<hr></h5>
+                                                                                <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $70</span></p>
+                                                                        </div>
+                                                                </div>
+                                                            <span class="medium-only">
+                                                                    <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                            <a href="product.html"><img class="card-img-top carousel-img" src="God.png" alt="tmp"></a>
+                                                                            <div class="card-body">
+                                                                                    <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune God Painting<hr></h5>
+                                                                                    <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $30</span></p>
+                                                                            </div>
+                                                                    </div>
+                                                            </span>
+                                                            <span class="large-only">
+                                                                    <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                            <a href="product.html"><img class="card-img-top carousel-img" src="Planet.png" alt="tmp"></a>
+                                                                            <div class="card-body">
+                                                                                    <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Planet Painting<hr></h5>
+                                                                                    <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $100</span></p>
+                                                                            </div>
+                                                                    </div>
+                                                            </span>
+                                                </div>
+                                                <div class="carousel-item">
+                                                                <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                        <a href="product.html"><img class="card-img-top carousel-img" src="Anime.png" alt="tmp"></a>
+                                                                        <div class="card-body">
+                                                                                <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Anime Painting<hr></h5>
+                                                                                <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $70</span></p>
+                                                                        </div>
+                                                                </div>
+                                                            <span class="medium-only">
+                                                                    <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                            <a href="product.html"><img class="card-img-top carousel-img" src="God.png" alt="tmp"></a>
+                                                                            <div class="card-body">
+                                                                                    <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune God Painting<hr></h5>
+                                                                                    <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $30</span></p>
+                                                                            </div>
+                                                                    </div>
+                                                            </span>
+                                                            <span class="large-only">
+                                                                    <div class="card" style="width:200px; height:250px; overflow:hidden">
+                                                                            <a href="product.html"><img class="card-img-top carousel-img" src="Planet.png" alt="tmp"></a>
+                                                                            <div class="card-body">
+                                                                                    <h5 class="card-title" style="font-weight:400; padding-left: 10px;width:75%;">Neptune Planet Painting<hr></h5>
+                                                                                    <p class="card-text" style="font-weight:300; padding-top:none">Some description here. <span style="font-weight:500"> Price: $100</span></p>
+                                                                            </div>
+                                                                    </div>
+                                                            </span>
+                                            </div>
+
+
+                                        <!-- Left and right controls -->
+                                        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#demo2" data-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </a>
+                                </div>
+                        </div>
+                            <div class="container-fluid">
+                                <div style="position:relative;left:10px;padding-top:5px;padding-bottom:10px; font-weight:bold"><h3>Explore by Category</h3></div>
+                                <div class="card-deck">
+                                    <div class="card home-card" style="padding-top:10px;left:0px;background-color:transparent">
+                                        <div class="card-body text-center">
+                                            <img class="home-card-img" src="design.png" alt="design logo"/>
+                                            <div class="home-card-text">Design</div>
+                                        </div>
+                                    </div>
+                                    <div class="card home-card" style="padding-top:10px;left:0px;background-color:transparent">
+                                        <div class="card-body text-center">
+                                            <img class="home-card-img" src="digital_marketing.png" alt="digital marketing logo"/>
+                                            <div class="home-card-text">Digital Marketing</div>
+                                        </div>
+                                    </div>
+                                    <div class="card home-card" style="padding-top:10px;left:0px;background-color:transparent">
+                                        <div class="card-body text-center">
+                                            <img class="home-card-img" src="character_design.png" alt="original characters logo"/>
+                                            <div class="home-card-text">Original Characters</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-deck">
+                                        <div class="card home-card" style="padding-top:20px;left:0px; background-color:transparent">
+                                            <div class="card-body text-center">
+                                                <img class="home-card-img" src="writing.png" alt="writing logo"/>
+                                                <div class="home-card-text">Writing</div>
+                                            </div>
+                                        </div>
+                                        <div class="card home-card" style="padding-top:20px;left:0px;background-color:transparent">
+                                            <div class="card-body text-center">
+                                                <img class="home-card-img" src="inventions.png" alt="inventions logo"/>
+                                                <div class="home-card-text">Inventions</div>
+                                            </div>
+                                        </div>
+                                        <div class="card home-card" style="padding-top:20px;left:0px;background-color:transparent">
+                                            <div class="card-body text-center">
+                                                <img class="home-card-img" src="music.png" alt="music logo"/>
+                                                <div class="home-card-text">Music</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+        </div>
+</div>
+<footer class="text-center">
+    <div>Copyright © Seviss 2019</div>
+</footer>
+    </body>
+</html>

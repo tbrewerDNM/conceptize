@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/355024952d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+            <div class="container-fluid" id="navigation-header" style="padding-bottom:2px;">
+                    <nav class="navbar-header">
+                            <div class="row" style="padding-bottom:0px !important">
+                                    <div class="input-group col-md-3 col-lg-2 col-xl-2"><a class="navbar-brand" href="homepage.html" style="float:none"><img src="logo.svg"/><span id="brand">onceptize</span></a></div>
+                                    <div class="input-group mb-3 col-md-6 col-lg-7 col-xl-8" style="padding-top:10px;">
+                                        <div class="input-group-prepend">
+                                            <div class="dropdown">
+                                                <button id="home-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    All
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">All</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Design</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Digital Marketing</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Original Characters</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Writing</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Inventions</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Music</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Search" name="search">
+                                        <div class="input-group-append">
+                                                <a href="search.html">
+                                                        <button class="btn btn-info" type="submit"><i class="fas fa-search"></i></button>
+                                                </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-2" style="padding-top:10px;float:none;text-align:right;"><a href="profile.html"><i class="fas fa-portrait"></i> Seviss</a> | <a href="#"><strong>250</strong> coins</a></div>
+                            </div>
+                    </nav>
+            </div>
+            <div class="container" style="padding-top:10px">
+                <div class="small-only">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section class="product-meta">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="product-title" style="text-align:center">Neptune Anime Painting</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div style="text-align:center;" class="col-12">
+                                                <span class="product-creator">By <a href="#">Seviss</a></span><br>
+                                                <button class="btn btn-primary product-contact">Contact</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div style="margin:auto;left:30vw;" class="product-prices">
+                                                <div class="product-price-text">Price: $70.00</div>
+                                                <div class="product-price-text">Negotiable: Yes</div>
+                                                <a href="checkout.html"><button class="btn btn-dark">Checkout</button></a>
+                                            </div>
+                                        </div>
+                                </div>
+                                </div>
+                                <br/>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                            <section class="product-pics">
+                                <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="product-image" src="Anime.png" alt="Los Angeles">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="product-image" src="Anime.png" alt="Chicago">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="product-image" src="Anime.png" alt="New York">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <div style="height:5vw;top:4vw;">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                        <li data-target="#product-carousel" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#product-carousel" data-slide-to="1"></li>
+                                                        <li data-target="#product-carousel" data-slide-to="2"></li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <!-- Left and right controls -->
+                                            <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                    </div>
+                    <div class="col-md-6 medium-only">
+                        <div class="product-title">Neptune Anime Painting</div>
+                        <span class="product-creator">By <a href="#">Seviss</a></span>
+                        <button class="btn btn-primary btn-sm product-contact">Contact</button>
+                        <br/>
+                        <div class="product-prices">
+                            <div class="product-price-text">Price: $70.00</div>
+                            <div class="product-price-text">Negotiable: Yes</div>
+                            <a href="checkout.html"><button class="btn btn-default">Checkout</button></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <section class="product-desc">
+                            <div>Description</div>
+                            <hr/>
+                            <div class="product-user-html">
+                                    This is a painting of Neptune.
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center">
+                <div>Copyright © Seviss 2019</div>
+        </footer>
+    </body>
+</html>

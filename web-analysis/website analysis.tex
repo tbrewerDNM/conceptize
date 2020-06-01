@@ -1,0 +1,125 @@
+\documentclass[]{article}
+\usepackage{enumitem}
+
+%opening
+\title{Idea Marketplace | Seviss | Terence Brewer, Olivia Brewer, Steven Aque}
+\author{Project 2: Website Analysis}
+
+\begin{document}
+
+\maketitle
+
+\section{Background}
+	Currently, there is nowhere on the Internet, at least indexed well, where someone can easily sell their personal intellectual property, including, but not limited to, ideas, consulting, fictional characters and premises, etc. so the desire for one to exist is what led to this project idea.
+
+\section{Website Analysis}
+
+		\begin{enumerate}
+			\item Existing Sites That Are Relevant
+				\begin{enumerate}
+					\item Fiverr
+						\begin{itemize}
+							\item Posts organized in categories
+							\item Reviews for posts
+							\item Reviews as seller
+							\item Direct communication with seller
+							\item Website collects a portion of profits from seller
+							\item Anyone can make an account and sell their service
+							\item Customer is not producted from seller malicious practices
+						\end{itemize}
+					\item DeviantArt
+						\begin{itemize}
+							\item Search by popularity, new, and other filters
+							\item Customizable user profiles
+							\item Ability to follow users; display number of followers
+							\item Promote postings through a group system
+							\item Private and public messaging
+							\item Comments on user profiles
+							\item Pay for goods independently to seller
+							\item Show related posts on listing
+							\item Default dark theme
+							\item Homepage features a gallery of images
+							\item Images displayed in a grid-like fashion
+							\item \(Shop\) user IP protected by copyrighted.com
+							\item \(Shop\) premium currency can be used to make purchases
+							\item \(Shop\) forced sign-in purchases
+						\end{itemize}
+					\item Amazon
+						\begin{itemize}
+							\item Pay to promote listings
+							\item Recommendations for listings
+							\item Save previous purchases
+							\item Indirect communication with seller
+							\item Protected purchase information
+							\item left navbar contains a variety of search filters
+							\item Product categorization through "departments"
+							\item "Best sellers" list for product types
+						\end{itemize}
+					\item Ebay
+						\begin{itemize}
+							\item Option to auction goods
+							\item Product categorization
+							\item "Make an offer" option
+							\item Any user can list products
+						\end{itemize}
+					\item AminoApps
+						\begin{itemize}
+							\item Store to purchase cosmetics such as stickers
+							\item Recommendations on intial page
+							\item Required login to post
+							\item Divided into hundreds of communities
+							\item Chatrooms
+						\end{itemize}
+					\item Craigslist
+						\begin{itemize}
+							\item Customer initiates sale through contact rather than "shopping cart" system
+							\item Negotiable pricing
+							\item Designed for users in close proximity
+							\item Any user can list products
+						\end{itemize}
+				\end{enumerate}
+			\item Functions We Want To Implement
+			\begin{enumerate}
+				\item Search products by name
+				\item Filter search results
+				\item Recommend products on login
+				\item Pagination
+				\item Copright-protect products
+				\item Premium currency with ability to earn
+				\item Ability to auction
+				\item Security of user data
+				\item Have an economy
+				\item Create and customize a profile, including profile picture
+				\item Private messaging with sellers and other users
+				\item Forced login to post or purchase
+				\item Products are reviewed before they are made public
+				\item Chatrooms / public discussion
+				\item Product categorization
+				\item Seller Rating
+			\end{enumerate}
+		\item Table
+			\begin{table}[!h]
+				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+					\hline  & Our System & Fiverr & DeviantArt & Amazon & Ebay & AminoApps & Craigslist \\
+					\hline Search & V & V & V & V & V & V & V\\
+					\hline Filter & V & V & V & V & V & V & V\\
+					\hline Recommend & V & V & V & V & V & V & X\\
+					\hline Pagination & V & V & X & V & V & X & V\\
+					\hline Copyright & V & X & O & X & X & X & X\\
+					\hline Premium currency & V & X & V & O & O & V & X\\
+					\hline Auction & V & X & X & X & V & X & O\\
+					\hline Security & V & V & V & V & V & V & X\\
+					\hline Economy & V & X & X & X & X & X & X\\
+					\hline User Profile & V & X & V & X & X & V & O\\
+					\hline Private message & V & V & V & O & O & V & X\\
+					\hline Forced login & V & X & V & X & O & V & X\\
+					\hline Reviewed by Site & V & X & X & V & V & O & X\\
+					\hline Chatrooms & V & X & V & X & X & V & O\\
+					\hline Categorization & V & V & V & V & V & V & V\\
+					\hline Seller Rating & V & V & X & V & V & X & X\\ 
+					\hline
+				\end{tabular}
+			\caption{V: Able to perform the task; X: Unable to perform the task; O: Able to perform the task with poor interactive design}
+		\end{table}
+	\end{enumerate}
+\end{document}

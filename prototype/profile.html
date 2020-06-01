@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/355024952d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+            <div class="container-fluid" id="navigation-header" style="padding-bottom:2px;">
+                    <nav class="navbar-header">
+                            <div class="row" style="padding-bottom:0px !important">
+                                    <div class="input-group col-md-3 col-lg-2 col-xl-2"><a class="navbar-brand" href="homepage.html" style="float:none"><img src="logo.svg"/><span id="brand">onceptize</span></a></div>
+                                    <div class="input-group mb-3 col-md-6 col-lg-7 col-xl-8" style="padding-top:10px;">
+                                        <div class="input-group-prepend">
+                                            <div class="dropdown">
+                                                <button id="home-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    All
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">All</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Design</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Digital Marketing</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Original Characters</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Writing</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Inventions</a>
+                                                    <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Music</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Search" name="search">
+                                        <div class="input-group-append">
+                                                <a href="search.html">
+                                                        <button class="btn btn-info" type="submit"><i class="fas fa-search"></i></button>
+                                                </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-2" style="padding-top:10px;float:none;text-align:right;"><a href="profile.html"><i class="fas fa-portrait"></i> Seviss</a> | <a href="#"><strong>250</strong> coins</a></div>
+                            </div>
+                    </nav>
+            </div>
+            <div class="container">
+                <div class="row" style="padding-top:10px">
+                    <div class="col-6 col-lg-6 col-xl-6">
+                        <div><h1>Seviss</h1></div>
+                        <div>Member since: 10/5/2019</div>
+                    </div>
+                    <div class="col-6 col-lg-6 col-xl-6">
+                        <img style="height:auto;width:25vw;border-radius:5px" src="shiroicon.png"/>
+                    </div>
+                </div>
+            </div>
+            <div id="profile-info" class="container">
+                <div class="row">
+                    <button onclick="profileSwitch(0);" style="width:50%;" type="button" class="btn btn-secondary">About</button>
+                    <button onclick="profileSwitch(1);" style="width:50%;" type="button" class="btn btn-secondary">Products</button>
+                </div>
+                <div style="background-color:#eeeeee;" class="row">
+                    <div class="col-12">
+                        <div>Name</div>
+                        <textarea readonly style="width:100%;" type="text">Terence Brewer</textarea>
+                    </div>
+                </div>
+                <div style="background-color:#eeeeee;" class="row">
+                    <div class="col-12">
+                        <div>About</div>
+                        <textarea readonly style="width:100%;" type="text">I am the creator of Seviss.</textarea>
+                    </div>
+                </div>
+                <div style="background-color:#eeeeee;" class="row">
+                    <div class="col-12">
+                        <div>Interests</div>
+                        <textarea readonly style="width:100%;" type="text">I like SSS.</textarea>
+                    </div>
+                </div>
+                <div class="row"></div>
+            </div>
+            <div id="profile-products" class="container">
+                    <div class="row">
+                        <button onclick="profileSwitch(0);" style="width:50%;" type="button" class="btn btn-secondary">About</button>
+                        <button onclick="profileSwitch(1);" style="width:50%;" type="button" class="btn btn-secondary">Products</button>
+                    </div>
+                    <div style="background-color:#eeeeee;" class="row">
+                        <div class="col-6">
+                            <div class="container">
+                                <div class="row">
+                                    <img class="checkout-pic" src="Anime.png"/>
+                                    <div class="profile-product-text">Neptune Anime Painting</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="container">
+                                <div class="row">
+                                    <img class="checkout-pic" src="God.png"/>
+                                    <div class="profile-product-text">Neptune God Painting</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div style="padding-top:4vh; margin:auto">
+                            <a href="create-product.html">
+                                <button class="btn btn-lg btn-default"><i class="fas fa-plus"></i> ADD NEW</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                </div>
+            <footer class="text-center">
+                <div>Copyright © Seviss 2019</div>
+            </footer>
+    </body>
+</html>

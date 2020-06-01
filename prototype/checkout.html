@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/355024952d.js" crossorigin="anonymous"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" id="navigation-header" style="padding-bottom:2px;">
+                <nav class="navbar-header">
+                        <div class="row" style="padding-bottom:0px !important">
+                                <div class="input-group col-md-3 col-lg-2 col-xl-2"><a class="navbar-brand" href="homepage.html" style="float:none"><img src="logo.svg"/><span id="brand">onceptize</span></a></div>
+                                <div class="input-group mb-3 col-md-6 col-lg-7 col-xl-8" style="padding-top:10px;">
+                                    <div class="input-group-prepend">
+                                        <div class="dropdown">
+                                            <button id="home-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                All
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">All</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Design</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Digital Marketing</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Original Characters</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Writing</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Inventions</a>
+                                                <a onclick="changeCategory('home-dropdown',this)" class="dropdown-item" href="#">Music</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search" name="search">
+                                    <div class="input-group-append">
+                                            <a href="search.html">
+                                                    <button class="btn btn-info" type="submit"><i class="fas fa-search"></i></button>
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-2" style="padding-top:10px;float:none;text-align:right;"><a href="profile.html"><i class="fas fa-portrait"></i> Seviss</a> | <a href="#"><strong>250</strong> coins</a></div>
+                        </div>
+                </nav>
+        </div>
+        <div>
+            <div class="container"style="padding-top:20px;">
+                <div class="row">
+                    <div style="border:1px solid black;" class="col-sm-6 col-lg-6 col-lx-6 col-md-6">
+                                <div class="container" style="padding-bottom:0px">
+                                    <div class="row" style="padding-top:10px;padding-bottom:0px;border-bottom:1px solid lightgray">
+                                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 checkout-product-text">
+                                            <h5 style="display:inline">Items</h5>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 "></div>
+                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 checkout-product-text">
+                                            <strong>Price</strong>
+                                        </div>
+                                </div>
+                                    <div class="row" style="padding-top:10px;">
+                                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                            <img class="checkout-pic" style="border-radius:5px" src="Anime.png"/>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 checkout-product-text">
+                                            Neptune Anime Painting
+                                        </div>
+                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 checkout-product-text">
+                                            $70.00
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-sm-1 col-lg-1 col-lx-1 col-md-1"></div>
+                    <div  class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <div class="medium-only" style="border:1px solid black;padding:20px;">
+                            <div><strong>Order Summary</strong><hr></div>
+                            <table>
+                                <tr>
+                                    <span>Neptune Anime Painting </span>
+                                    <span>$70.00</span>
+                                    <br/>
+                                </tr>
+                            </table>
+                            <hr/>
+                            <span>Order Total: $70.00</span><br/>
+                            <div style="padding-top:2vh">
+                            <a href="homepage.html">
+                                <button class="btn btn-secondary btn-sm">Cancel</button>
+                            </a>
+                            <a href="confirmation.html">
+                                <button class="btn btn-secondary btn-sm">Place Order</button>
+                            </a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-only">
+                        <div style="border:1px solid black;padding:10px" class="col-md-4">
+                            <div><strong>Order Summary</strong><hr></div>
+                            <table>
+                                <tr>
+                                    <span>Neptune Anime Painting </span>
+                                    <span>$70.00</span>
+                                    <br/>
+                                </tr>
+                            </table>
+                            <hr/>
+                            <span>Order Total: $70.00</span><br/>
+                            <div style="padding-top:2vh">
+                            <a href="homepage.html">
+                                <button class="btn btn-secondary btn-sm">Cancel</button>
+                            </a>
+                            <a href="confirmation.html">
+                                <button class="btn btn-secondary btn-sm">Place Order</button>
+                            </a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <footer class="text-center">
+            <div>Copyright © Seviss 2019</div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+password: seviss777
+gitinspector -HTrm -f html,css,js,tex,png -F html > group7.html
+
+git clone https://git.cs.nmt.edu/tbrewer/cse321-2019-group7.git

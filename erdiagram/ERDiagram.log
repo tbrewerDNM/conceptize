@@ -1,0 +1,367 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.26)  31 OCT 2019 14:20
+entering extended mode
+**./ERDiagram.tex
+(ERDiagram.tex
+LaTeX2e <2018-12-01>
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.
+sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks14
+\labelindent=\skip43
+\enit@outerparindent=\dimen103
+\enit@toks=\toks15
+\enit@inbox=\box27
+\enit@count@id=\count88
+\enitdp@description=\count89
+)
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+) (ERDiagram.aux)
+\openout1 = `ERDiagram.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count90
+\scratchdimen=\dimen106
+\scratchbox=\box28
+\nofMPsegments=\count91
+\nofMParguments=\count92
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count93
+\MPscratchDim=\dimen107
+\MPnumerator=\count94
+\makeMPintoPDFobject=\count95
+\everyMPtoPDFconversion=\toks18
+)
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
+
+("C:\Users\shizu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 42.
+
+[1
+
+{C:/Users/shizu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Overfull \hbox (111.44524pt too wide) in paragraph at lines 101--121
+[][] 
+ []
+
+<./pictures/homepage.png, id=14, 366.70334pt x 486.14958pt>
+File: ./pictures/homepage.png Graphic file (type png)
+<use ./pictures/homepage.png>
+Package pdftex.def Info: ./pictures/homepage.png  used on input line 133.
+(pdftex.def)             Requested size: 345.0pt x 457.38866pt.
+<./pictures/homepage_mobile.png, id=16, 215.80624pt x 402.16917pt>
+File: ./pictures/homepage_mobile.png Graphic file (type png)
+<use ./pictures/homepage_mobile.png>
+Package pdftex.def Info: ./pictures/homepage_mobile.png  used on input line 139
+.
+(pdftex.def)             Requested size: 345.0pt x 642.99902pt.
+
+LaTeX Warning: Float too large for page by 116.94347pt on input line 142.
+
+<./pictures/login.png, id=17, 369.71458pt x 335.58708pt>
+File: ./pictures/login.png Graphic file (type png)
+<use ./pictures/login.png>
+Package pdftex.def Info: ./pictures/login.png  used on input line 145.
+(pdftex.def)             Requested size: 345.0pt x 313.1732pt.
+<./pictures/login_mobile.png, id=18, 213.79875pt x 395.4775pt>
+File: ./pictures/login_mobile.png Graphic file (type png)
+<use ./pictures/login_mobile.png>
+Package pdftex.def Info: ./pictures/login_mobile.png  used on input line 151.
+(pdftex.def)             Requested size: 345.0pt x 638.214pt.
+
+LaTeX Warning: Float too large for page by 112.15845pt on input line 154.
+
+<./pictures/profile_product.png, id=19, 352.98541pt x 639.38875pt>
+File: ./pictures/profile_product.png Graphic file (type png)
+<use ./pictures/profile_product.png>
+Package pdftex.def Info: ./pictures/profile_product.png  used on input line 157
+.
+(pdftex.def)             Requested size: 345.0pt x 624.94788pt.
+
+LaTeX Warning: Float too large for page by 98.89232pt on input line 160.
+
+File: ./pictures/profile_product.png Graphic file (type png)
+<use ./pictures/profile_product.png>
+Package pdftex.def Info: ./pictures/profile_product.png  used on input line 163
+.
+(pdftex.def)             Requested size: 345.0pt x 624.94788pt.
+
+LaTeX Warning: Float too large for page by 98.89232pt on input line 166.
+
+<./pictures/create_page.png, id=20, 346.29375pt x 586.52458pt>
+File: ./pictures/create_page.png Graphic file (type png)
+<use ./pictures/create_page.png>
+Package pdftex.def Info: ./pictures/create_page.png  used on input line 169.
+(pdftex.def)             Requested size: 345.0pt x 584.34837pt.
+
+LaTeX Warning: Float too large for page by 58.29282pt on input line 172.
+
+<./pictures/create_page_mobile.png, id=21, 214.13333pt x 401.16542pt>
+File: ./pictures/create_page_mobile.png Graphic file (type png)
+<use ./pictures/create_page_mobile.png>
+Package pdftex.def Info: ./pictures/create_page_mobile.png  used on input line 
+175.
+(pdftex.def)             Requested size: 345.0pt x 646.35855pt.
+
+LaTeX Warning: Float too large for page by 120.303pt on input line 178.
+
+<./pictures/product.png, id=22, 351.3125pt x 474.10458pt>
+File: ./pictures/product.png Graphic file (type png)
+<use ./pictures/product.png>
+Package pdftex.def Info: ./pictures/product.png  used on input line 181.
+(pdftex.def)             Requested size: 345.0pt x 465.62488pt.
+<./pictures/product_mobile.png, id=23, 316.51584pt x 394.13916pt>
+File: ./pictures/product_mobile.png Graphic file (type png)
+<use ./pictures/product_mobile.png>
+Package pdftex.def Info: ./pictures/product_mobile.png  used on input line 187.
+
+(pdftex.def)             Requested size: 345.0pt x 429.62721pt.
+[3] [4 <./pictures/homepage.png>] [5 <./pictures/homepage_mobile.png>] [6 <./pi
+ctures/login.png>] [7 <./pictures/login_mobile.png>] [8 <./pictures/profile_pro
+duct.png>] [9] [10 <./pictures/create_page.png>] [11 <./pictures/create_page_mo
+bile.png>] [12 <./pictures/product.png>] [13 <./pictures/product_mobile.png>]
+File: ./pictures/homepage.png Graphic file (type png)
+<use ./pictures/homepage.png>
+Package pdftex.def Info: ./pictures/homepage.png  used on input line 195.
+(pdftex.def)             Requested size: 345.0pt x 457.38866pt.
+File: ./pictures/homepage_mobile.png Graphic file (type png)
+<use ./pictures/homepage_mobile.png>
+Package pdftex.def Info: ./pictures/homepage_mobile.png  used on input line 201
+.
+(pdftex.def)             Requested size: 345.0pt x 642.99902pt.
+
+
+LaTeX Warning: Float too large for page by 116.94347pt on input line 204.
+
+<./pictures/search_results.png, id=68, 315.51208pt x 384.77083pt>
+File: ./pictures/search_results.png Graphic file (type png)
+<use ./pictures/search_results.png>
+Package pdftex.def Info: ./pictures/search_results.png  used on input line 207.
+
+(pdftex.def)             Requested size: 345.0pt x 420.74225pt.
+<./pictures/search_results_mobile.png, id=69, 212.46042pt x 394.47375pt>
+File: ./pictures/search_results_mobile.png Graphic file (type png)
+<use ./pictures/search_results_mobile.png>
+Package pdftex.def Info: ./pictures/search_results_mobile.png  used on input li
+ne 213.
+(pdftex.def)             Requested size: 345.0pt x 640.62099pt.
+
+LaTeX Warning: Float too large for page by 114.56543pt on input line 216.
+
+File: ./pictures/product.png Graphic file (type png)
+<use ./pictures/product.png>
+Package pdftex.def Info: ./pictures/product.png  used on input line 219.
+(pdftex.def)             Requested size: 345.0pt x 465.62488pt.
+File: ./pictures/product_mobile.png Graphic file (type png)
+<use ./pictures/product_mobile.png>
+Package pdftex.def Info: ./pictures/product_mobile.png  used on input line 225.
+
+(pdftex.def)             Requested size: 345.0pt x 429.62721pt.
+<./pictures/shopping_cart.png, id=70, 394.47375pt x 415.5525pt>
+File: ./pictures/shopping_cart.png Graphic file (type png)
+<use ./pictures/shopping_cart.png>
+Package pdftex.def Info: ./pictures/shopping_cart.png  used on input line 231.
+(pdftex.def)             Requested size: 345.0pt x 363.43634pt.
+<./pictures/shopping_cart_mobile.png, id=71, 255.28708pt x 397.81958pt>
+File: ./pictures/shopping_cart_mobile.png Graphic file (type png)
+<use ./pictures/shopping_cart_mobile.png>
+Package pdftex.def Info: ./pictures/shopping_cart_mobile.png  used on input lin
+e 237.
+(pdftex.def)             Requested size: 345.0pt x 537.62814pt.
+
+LaTeX Warning: Float too large for page by 11.57259pt on input line 240.
+
+<./pictures/checkout.png, id=72, 350.30875pt x 335.2525pt>
+File: ./pictures/checkout.png Graphic file (type png)
+<use ./pictures/checkout.png>
+Package pdftex.def Info: ./pictures/checkout.png  used on input line 243.
+(pdftex.def)             Requested size: 345.0pt x 330.19241pt.
+<./pictures/checkout_mobile.png, id=73, 212.12584pt x 390.45876pt>
+File: ./pictures/checkout_mobile.png Graphic file (type png)
+<use ./pictures/checkout_mobile.png>
+Package pdftex.def Info: ./pictures/checkout_mobile.png  used on input line 249
+.
+(pdftex.def)             Requested size: 345.0pt x 635.03607pt.
+
+LaTeX Warning: Float too large for page by 108.98051pt on input line 252.
+
+<./pictures/confirmation.png, id=74, 343.2825pt x 384.43625pt>
+File: ./pictures/confirmation.png Graphic file (type png)
+<use ./pictures/confirmation.png>
+Package pdftex.def Info: ./pictures/confirmation.png  used on input line 255.
+(pdftex.def)             Requested size: 345.0pt x 386.35934pt.
+<./pictures/confirmation_mobile.png, id=75, 211.45667pt x 388.45125pt>
+File: ./pictures/confirmation_mobile.png Graphic file (type png)
+<use ./pictures/confirmation_mobile.png>
+Package pdftex.def Info: ./pictures/confirmation_mobile.png  used on input line
+ 261.
+(pdftex.def)             Requested size: 345.0pt x 633.82785pt.
+
+LaTeX Warning: Float too large for page by 107.7723pt on input line 264.
+
+[14] [15] [16] [17 <./pictures/search_results.png>] [18 <./pictures/search_resu
+lts_mobile.png>] [19] [20] [21 <./pictures/shopping_cart.png>] [22 <./pictures/
+shopping_cart_mobile.png>] [23 <./pictures/checkout.png>] [24 <./pictures/check
+out_mobile.png>] [25 <./pictures/confirmation.png>] [26 <./pictures/confirmatio
+n_mobile.png>] [27]
+Overfull \hbox (128.27858pt too wide) in paragraph at lines 286--306
+[][] 
+ []
+
+
+Overfull \hbox (111.44524pt too wide) in paragraph at lines 311--331
+[][] 
+ []
+
+[28] [29] (ERDiagram.aux) ) 
+Here is how much of TeX's memory you used:
+ 1873 strings out of 492945
+ 29925 string characters out of 3126252
+ 107452 words of memory out of 3000000
+ 5758 multiletter control sequences out of 15000+200000
+ 7587 words of font info for 27 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,8n,25p,310b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/shizu/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/shizu/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/shizu/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/shiz
+u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
+:/Users/shizu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><C:/Users/shizu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb>
+Output written on ERDiagram.pdf (29 pages, 4935038 bytes).
+PDF statistics:
+ 154 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+
